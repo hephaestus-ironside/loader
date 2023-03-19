@@ -38,7 +38,7 @@ struct ContentView: View {
                             let platformname = d.getPlatformName() ?? "Unknown"
                             let platformver = d.getPlatformVersion() ?? "Unknown"
                             
-                            console.log("Welcome to palera1n loader")
+                            console.log("Welcome to Ironside loader")
                             console.log(uname())
                             console.log("\(machinename) running \(platformname) \(platformver) (\(modelarch))")
                             let tb = ToolbarStateMoment.s
@@ -46,7 +46,7 @@ struct ContentView: View {
                                 console.log("Type: Unknown (Simulator)")
                             #else
                                 if modelarch != "arm64" {
-                                    let msg = "palera1n doesn't, and never will, work on non-checkm8 devices"
+                                    let msg = "Ironside doesn't, and never will, work on non-checkm8 devices"
                                     console.error("[-] \(msg)")
                                     tb.toolbarState = .closeApp
                                     print("[palera1n] \(msg)")
@@ -107,7 +107,7 @@ struct ContentView: View {
         .padding(.bottom)
         .padding(.vertical, 20)
         .alert("Error", isPresented: $rfrAlert) {} message: {
-            Text("Bootstrapping after using --force-revert is not supported, please recreate fakefs to be able to bootstrap again.")
+    Text("Bootstrapping after using --force-revert is not supported, please recreate fakefs to be able to bootstrap again :3")
         }
     }
     
@@ -119,7 +119,7 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 64)
-                Text("palera1n")
+                Text("Ironside")
                     .font(.system(size: 48, weight: .bold))
             }
             .padding(8)
