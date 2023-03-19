@@ -25,11 +25,11 @@ jobs:
       - name: Upload artifact
         uses: wangyucode/sftp-upload-action@v1.4.8
         with:
-          host: ${{ secrets.STATIC_FTP_HOST }}
+          host: ironside.org.uk
           port: 22
-          username: static
+          username: root
           password: ${{ secrets.STATIC_FTP_PASS }}
           forceUpload: true
           dryRun: false
           localDir: 'packages/'
-          remoteDir: '/artifacts/loader/universal'
+          remoteDir: '/home/ubuntu/www/html/artifacts/loader/universal'
